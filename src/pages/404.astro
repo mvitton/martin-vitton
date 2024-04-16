@@ -4,6 +4,8 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
+import heroImg from "../assets/images/hero-img.png";
+import { Image } from "astro:assets";
 ---
 
 <Layout title={`404 Not Found | ${SITE.title}`}>
@@ -11,15 +13,16 @@ import LinkButton from "@components/LinkButton.astro";
 
   <main id="main-content">
     <div class="not-found-wrapper">
-      <h1 aria-label="404 Not Found">404</h1>
-      <span aria-hidden="true">¯\_(ツ)_/¯</span>
       <p>Página no encontrada</p>
+      <span aria-hidden="true">¯\_(ツ)_/¯</span>
       <LinkButton
         href="/"
-        className="my-6 underline decoration-dashed underline-offset-8 text-lg"
+        className="my-3 underline decoration-dashed underline-offset-8 text-lg"
       >
         Volver
       </LinkButton>
+      <Image src={heroImg} alt="" width={400}  />
+      <!-- <h1 aria-label="404 Not Found">404</h1> -->
     </div>
   </main>
 
@@ -34,7 +37,7 @@ import LinkButton from "@components/LinkButton.astro";
     @apply mb-14 flex flex-col items-center justify-center;
   }
   .not-found-wrapper h1 {
-    @apply text-9xl font-bold text-skin-accent;
+    @apply text-7xl font-bold text-skin-accent;
   }
   .not-found-wrapper p {
     @apply mt-4 text-2xl sm:text-3xl;

@@ -9,6 +9,8 @@ import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
+import heroImg from "../assets/images/hero-img.png";
+import { Image } from "astro:assets";
 
 const posts = await getCollection("blog");
 
@@ -22,28 +24,26 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <!-- <h1>Martín Vittón</h1> -->
-      <!-- <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-        <span class="sr-only">RSS Feed</span>
-      </a> -->
-
-      <p>
-        Escritor, corrector, bajista, amigo del rulo, esposo y padre de familia, son las cosas que me definen y punto. 
-        También me caben los Beatles.
-      </p>
+      <Image src={heroImg} alt="" width={300} height={300} />
+      <div>
+        <h1>Martín "Lobo" Vittón</h1>
+        <Hr />
+        <p>
+          Corrector literario, editor, redactor… Hago libros. Melómano,
+          bibliófilo y <strike>dialéctico</strike> diabético. Curioso con tendencia
+          a lo retro: este es mi blog.
+        </p>
+        <Hr />
+        {
+          // only display if at least one social link is enabled
+          socialCount > 0 && (
+            <div class="social-wrapper">
+              <div class="social-links">Contacto:</div>
+              <Socials />
+            </div>
+          )
+        }
+      </div>
       <!-- <p>
         Read the blog posts or check
         <LinkButton
@@ -53,18 +53,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           README
         </LinkButton> for more info.
       </p> -->
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-            </div>
-        )
-      }
     </section>
-
-    <Hr />
 
     <!-- {
       featuredPosts.length > 0 && (
@@ -123,10 +112,10 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pb-6 pt-8;
+    @apply flex flex-row pb-6 pt-8;
   }
   #hero h1 {
-    @apply my-4 inline-block text-6xl font-dekko font-bold sm:my-8 sm:text-5xl;
+    @apply my-4 inline-block font-dekko text-6xl font-bold sm:my-8 sm:text-5xl;
   }
   #hero .rss-link {
     @apply mb-6;
@@ -138,7 +127,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply my-2;
   }
   .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+    @apply mt-4 flex flex-col justify-center sm:flex-row sm:items-center;
   }
   .social-links {
     @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;

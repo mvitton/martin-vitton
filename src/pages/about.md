@@ -3,7 +3,9 @@ layout: ../layouts/AboutLayout.astro
 title: "Sobre mí:"
 ---
 
-Te corrijo todo, hasta que parezcas bueno
+Soy profesor para la enseñanza primaria, recibido en la Escuela Normal Superior N.º 4 Estanislao Zeballos. También soy corrector literario, egresado del Instituto Superior de Letras Eduardo Mallea. Llevo casi treinta años trabajando en el ámbito editorial.
+Brindo servicios de corrección y asesoramiento sobre producción y publicación. Coordino talleres de capacitación y práctica para autores, editores y correctores.
+Consultas, CV y salutaciones: martinvitton@gmail.com
 
 <!-- AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
 
@@ -34,6 +36,5 @@ Here are certain features of this site.
 - sitemap & rss feed
 - highly customizable
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
+If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).
 Or you can even give any feedback via my [email](mailto:contact@satnaing.dev). -->
-
