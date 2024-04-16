@@ -26,8 +26,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <section id="hero">
       <Image src={heroImg} alt="" width={300} height={300} />
       <div>
-        <h1>Martín "Lobo" Vittón</h1>
-        <Hr />
+        <!-- <h1>Martín "Lobo" Vittón</h1> -->
+        <!-- <Hr /> -->
         <p>
           Corrector literario, editor, redactor… Hago libros. Melómano,
           bibliófilo y <strike>dialéctico</strike> diabético. Curioso con tendencia
@@ -114,7 +114,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply flex flex-col sm:flex-row pb-6 pt-8;
+    @apply flex flex-col sm:flex-row pb-6 pt-8 items-center;
   }
   #hero h1 {
     @apply my-4 inline-block font-dekko text-4xl font-bold sm:my-8 sm:text-5xl;
@@ -126,7 +126,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
   }
   #hero p {
-    @apply my-2;
+    @apply my-2 leading-10 tracking-wider;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col justify-center sm:flex-row sm:items-center;
