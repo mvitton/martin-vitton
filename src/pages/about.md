@@ -9,7 +9,3 @@ Llevo casi treinta años trabajando en el ámbito editorial.
 Brindo servicios de corrección y asesoramiento sobre producción y publicación. Coordino talleres de capacitación y práctica para autores, editores y correctores.
 
 Consultas, CV y salutaciones: martinvitton@gmail.com
-
-<div>
-  <img src="/favicon.jpg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>

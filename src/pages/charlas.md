@@ -10,3 +10,7 @@ Talleres abiertos:
 - La corrección en el circuito editorial
 
 martinvitton@gmail.com
+
+<div>
+  <img src="/libros.png" class="sm:w-1/4 mx-auto rounded-3xl" alt="coding dev illustration">
+</div>
