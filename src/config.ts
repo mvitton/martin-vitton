@@ -2,8 +2,8 @@ import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://martinvitton.com.ar", // replace this with your deployed domain
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  author: "Pablo X. Lospennato",
+  desc: "Blog del escritor, corrector literario homónimo",
   title: "Martín Vittón",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
