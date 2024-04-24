@@ -24,7 +24,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content" >
     <section id="hero">
-      <Image src={heroImg} alt="" width={250} height={250} class="rounded-3xl"/>
+      <Image src={heroImg} alt="Hero image Martín Vittón" width={250} height={250} class="rounded-3xl"/>
       <div>
         <!-- <h1>Martín "Lobo" Vittón</h1> -->
         <!-- <Hr /> -->
@@ -112,7 +112,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply flex flex-col sm:flex-row pb-6 pt-8 items-center gap-20;
+    @apply flex flex-col sm:flex-row pb-6 pt-8 items-center gap-4 sm:gap-20;
   }
   #hero h1 {
     @apply my-4 inline-block font-itim text-4xl font-bold sm:my-8 sm:text-5xl;
