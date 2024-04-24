@@ -1,6 +1,6 @@
 ---
-layout: ../layouts/CharlasLayout.astro
-title: "Charlas"
+layout: ../layouts/TalleresLayout.astro
+title: "Talleres"
 ---
 
 Talleres abiertos:
